@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$font: Open Sans;
+$yellow : #ffe400;
+
+@mixin transition($a){
+	-webkit-transition: all $a ease;
+	   -moz-transition: all $a ease;
+	    -ms-transition: all $a ease;
+	     -o-transition: all $a ease;
+	        transition: all $a ease;	
+}
+*{
+	padding: 0;
+	margin: 0;
+	@include transition(1s);
+}
+@mixin my(){
+			background-color: transparent;
+			border: 1px solid #706f6f;
+			width: 200px;
+			border-radius: 50px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+		}
+body{
+	font-family: $font;
+}
+ol,ul{
+	list-style: none;
+}
+.top-bar{
+	height: 50px;
+	background-color: #1b1919;
+	float:left;
+	width:100%;
+	line-height: 50px;
+}
+.social-follow{
+	float: left;
+	ul{
+		li{
+			display: inline;
+			a{
+				padding-right: 20px;
+				i{
+					color: #fff;
+				}				
+			}
+		}
+	}
+}
+.admin{
+	float: right;
+	ul{
+		li{
+			a{
+				padding-left: 10px;
+				color: white;
+			}
+		}
+	}
+}
+header{
+	line-height: 100px;
+		.logo{
+			margin-top: 10px;
+			margin-bottom: 10px;
+			float: left;
+		}
+		nav{
+			float: right;
+
+			ul{
+
+				li{
+					display: block;
+					float: left;
+					a{
+						color: #1b1919;
+						font-size: 14px;
+						width: 90px;
+						height: 40px;
+						text-align: center;
+						line-height: 40px;
+						display: inline-block;
+					}
+					a:hover,.current{
+						text-decoration: none;
+						background-color: $yellow;
+
+					}
+				}
+			}
+		}
+}
+.slider{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url(../img/home-without-effect.jpg);
+		padding: 150px 0;
+		h1{
+			font-weight: bold;
+			text-transform: uppercase;
+			span{
+				background-color: black;
+				color: $yellow;
+			}
+
+		}
+		h2{
+			margin-top: 0;
+			text-transform: uppercase;
+			font-size: 35px;
+		}
+		p{
+			color: #868585;
+		}
+		
+		button{
+			@include my();
+				a{
+					color: #1b1919;
+				 }
+				
+		}
+}
+.gray-cell{
+	padding: 90px 0;
+	text-align: center;
+		h2{
+			text-transform: uppercase;
+			font-weight: bold;
+				span{
+					color: #888888;
+					}
+		}
+		p{
+			color: #313131;
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+
+		.ft-z{
+			line-height: 20px;
+			color: #6d6d6d;
+			margin-top: 10px;
+			font-weight: 800;
+			font-size: 12px;
+		}
+		.ft-y{
+			text-transform:capitalize;
+			line-height: 20px;
+			color: #989898;
+			margin-top: 10px;
+			font-weight: 800;
+			font-size: 13px;
+		}
+
+		//start a bootstrap button
+
+			.btn-group{
+				margin: 20px 0 0 0;	
+				ul{
+					li{
+						padding-right: 12px;
+						display: inline;
+						a{
+							line-height: 50px;
+							 padding: 7px 14px;
+							 border: 1px solid #dedede;
+							 color: #595959;
+							 letter-spacing: 2px;
+						}
+						a:hover,.current{
+							 background-color: $yellow;
+
+						}
+					}
+				}
+			}
+}
+.inner{
+	text-align: center;
+		p{
+			margin: 15px 0;
+			font-size: 18px;
+			text-transform: uppercase;
+				
+		}
+		.ft-z{
+				font-size: 12px;
+				font-weight: bold;
+				color: #626262;	
+			}
+
+		.ft-x{
+				padding: 0;
+				margin: 0;
+				font-size: 14px;
+				color: #626262;	
+			}
+			hr.hr{
+
+				padding: 0;
+				margin: 10px 0 50px 0px;
+				border: 0;
+				height: 2px;
+				width: 50px;
+				text-align: center;
+				display: inline-block;
+				background-color: #ffe400;
+			}
+}
+.bg-image{
+	background-image: url(../img/section-back-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 70px 0;
+	.check-out{
+		text-align: center;
+		h1{
+			margin-bottom: 100px;
+			text-transform: uppercase;
+			font-weight: bold;
+			color: #ffffff;
+				span{
+					color: $yellow;
+					}
+		}
+		p{
+			color: #f3f3f3;
+			font-size: 13px;
+			margin-bottom: 70px;
+			text-transform: uppercase;
+		}
+}
+}
+
+.inner-2{
+	
+			text-align: center;
+.rel{
+	padding-top: 60px;
+	position: relative;
+		.check{
+			padding: 60px 0; 
+			border: 1px solid #af9b05;
+			i{
+				position: absolute;
+				top: 0;
+				left: 135px;
+			background-color: #ab9d0c;
+			width: 120px;
+			height: 120px;
+			line-height: 120px;
+			text-align: center;
+			border-radius: 50%;
+		}
+			
+		p{
+			color: #f3f3f3;
+			margin: 15px 0;
+			font-size: 18px;
+				
+		}
+		.ft-z{
+				letter-spacing: 1px;
+				color: #f3f3f3;
+				font-size: 12px;
+				font-weight: bold;
+			}
+
+		}
+}	
+		//image
+
+}
+
+.inner-2 img{
+	margin-bottom: 20px;
+}
+
+.counter-section{
+	padding: 60px 0;
+	background-color: #333333;
+		.counter{
+			text-align: center;
+			text-transform: uppercase;
+			color: #a8a8a8;
+		
+		h1{
+			padding: 0;
+			margin-top: 2	0px;
+			margin-bottom: 15px;
+			font-weight: 100;
+			font-size: 50px;
+		}
+		}	
+}
+.you-tube{
+	
+	text-align: left;
+	margin-top: 20px;
+	p{
+		font-size: 13px;
+		font-weight: bold;
+		text-align: left;
+		color: #6b6b6b;
+		line-height: 20px;
+
+	}
+	.pera{
+		margin: 30px 0;
+		ul{
+			li{
+				padding-left: 10px;
+				list-style: circle;
+			}
+		}
+	}
+	button{
+			@include my();
+	}
+		button.add{
+			border: 0;
+			background-color: $yellow;	
+		}
+}
+
+.foot{
+	h3{
+		margin-bottom: 30px;
+		text-align: left;
+		font-weight: bold;
+		letter-spacing: 1px;
+		font-size: 16px;
+		text-transform: capitalize;
+
+	}
+	p{
+		text-align: left;
+		font-size: 11px;
+		line-height: 20px;
+	}
+	.foot-social{
+		text-align: left;
+
+		 ul{
+		 	li{
+		 		display: inline;
+		 		a{
+		 			text-align: center;
+					color: #bcbcbc;
+					line-height: 50px;
+			 		display: inline-block;
+		 			width: 50px;
+			 		height: 50px;
+			 		border: 1px solid #bcbcbc;
+			 		border-radius: 50%;
+		 		}
+		 	}
+		 }
+	}//foot link
+	.links{
+		ul{
+			padding-left: 20px;
+			li{
+				text-align: left;
+				list-style: square;
+			}
+		}
+	}
+input{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 20px;
+	background-color: #2b2a2a;
+	border: 0;
+	margin-bottom: 20px;
+}
+	
+	button{
+		@include my();
+
+	}
+	button.adding{
+		color: $yellow;
+		border: 1px solid $yellow;
+	}
+	i{
+		color: $yellow;
+	}
+}
+i.checking{
+	display: none;
+}
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (max-width: 600px) {
+   i.checking{
+	top: 90px;
+	z-index: 9;
+	right: 40px;
+	display: block;
+	float: right;
+	position: absolute;
+
+}header{
+	nav{
+		float: right;
+		ul{
+			background-color: #fff;
+			width: 240px;
+			display: none;
+			position: absolute;
+			top: 100px;
+			right: 0;
+
+			li{
+					display: block;
+					width: 100%;
+				
+				a{
+					width: 100%;
+			
+					display: block;
+					border: 1px solid black;
+				}
+			}
+		}
+	}
+}	
+}
